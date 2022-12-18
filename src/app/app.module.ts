@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Meta } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { GoogleAuthService } from 'shared/services/google-auth.service';
 import { SharedModule } from 'shared/shared.module';
@@ -11,7 +12,6 @@ import { LoginComponent } from './core/components/login/login.component';
 import { CoreModule } from './core/core.module';
 import { ProductsComponent } from './shopping/components/products/products.component';
 import { ShoppingModule } from './shopping/shopping.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -27,14 +27,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CoreModule,
     HttpClientModule,
     RouterModule.forRoot([
-    { path: '', component: ProductsComponent },
-    { path: 'login', component: LoginComponent },
-    { path: '**', redirectTo: '' }
-], {
-    initialNavigation: 'enabledBlocking'
-})
+      { path: '', component: ProductsComponent },
+      { path: 'login', component: LoginComponent },
+      { path: '**', redirectTo: '' }
+    ], {
+      initialNavigation: 'enabledBlocking'
+    })
     ],
-  providers: [GoogleAuthService],
+  providers: [GoogleAuthService, Meta],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
