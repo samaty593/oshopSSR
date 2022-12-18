@@ -1,0 +1,19 @@
+article {
+    width: 90%;
+    margin: auto;
+    margin-top: 7rem;
+    display: flex;
+    column-gap: 4rem;
+}
+.form {
+flex-basis: 50vw;
+}
+
+.order {
+   flex-basis: 25vw;
+   margin:auto;
+   box-shadow: 0 0 0 1px #dadce0;
+   padding: 3rem;
+   border-radius: 8px;
+
+}

@@ -1,0 +1,25 @@
+<div class="topnav">
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/"><mat-icon fontIcon="landscape"> </mat-icon></a>
+      </li>
+      <li
+        [matBadge]="shoppingCartItemCount"
+        matBadgeOverlap="false"
+        matBadgeColor="accent"
+      >
+        <a routerLink="/shopping-cart">
+          <mat-icon fontIcon="shopping_cart_checkout"></mat-icon>
+        </a>
+      </li>
+      <li class="user" *ngIf="username">
+        <app-drop-down></app-drop-down>
+      </li>
+      <li class="login" *ngIf="!username">
+        <a routerLink="/login">Login</a>
+        <mat-icon fontIcon="login"></mat-icon>
+      </li>
+    </ul>
+  </nav>
+</div>

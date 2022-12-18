@@ -1,0 +1,58 @@
+<article>
+  <section>
+    <a class="head-link" routerLink="/admin/products/new">New Product</a>
+  </section>
+  <section>
+    <input
+      #query
+      type="text"
+      placeholder="Search..."
+      (keyup)="filter(query.value)"
+    />
+  </section>
+  <section class="mat-elevation-z3">
+    <table
+      mat-table
+      [dataSource]="filteredProducts"
+      matSort
+      (matSortChange)="sortData()"
+    >
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell *matCellDef="let element">
+          {{ filteredProducts.indexOf(element) }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+        <td mat-cell *matCellDef="let element">{{ element.title }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Price</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.price | currency : "USD" : true }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="edit">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+          <a [routerLink]="['/admin/products/', element._id]">Edit</a>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <mat-paginator
+      [length]="products?.length"
+      [pageSizeOptions]="[5, 10, 20]"
+      showFirstLastButtons
+      aria-label="Select page"
+    >
+    </mat-paginator>
+  </section>
+</article>

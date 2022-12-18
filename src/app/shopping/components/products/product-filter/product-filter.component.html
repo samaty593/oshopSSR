@@ -1,0 +1,18 @@
+<mat-nav-list>
+  <a
+    mat-list-item
+    routerLink="/"
+    [queryParams]="{ category: 'all-categories' }"
+    [routerLinkActive]="['is-active']"
+    >All Categories</a
+  >
+  <a
+    mat-list-item
+    [routerLinkActive]="['is-active']"
+    *ngFor="let c of categories$ | async"
+    routerLink="/"
+    [queryParams]="{ category: c.name }"
+  >
+    {{ c.name }}
+  </a>
+</mat-nav-list>

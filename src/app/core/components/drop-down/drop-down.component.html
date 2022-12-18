@@ -1,0 +1,21 @@
+<article [hidden]="username == ''">
+  <div class="title" (click)="showMenu()">
+    <span class="material-symbols-sharp"> productivity </span>
+    {{ username }}
+    <mat-icon fontIcon="arrow_drop_down"></mat-icon>
+  </div>
+  <div class="dropdown" [class.show]="show" (mouseleave)="showMenu()">
+    <ul>
+      <li>
+        <a routerLink="/my/orders">My Order</a>
+      </li>
+      <li *ngIf="isAdmin$ | async">
+        <a routerLink="/admin/orders">Manage Orders</a>
+      </li>
+      <li *ngIf="isAdmin$ | async">
+        <a routerLink="/admin/products">Manage Prodcuts</a>
+      </li>
+      <li><a (click)="logOut()">log Out</a></li>
+    </ul>
+  </div>
+</article>

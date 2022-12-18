@@ -1,0 +1,81 @@
+
+.topnav {
+    background-color: 	rgba(188, 251, 246, 0.5);
+    padding: 1.7rem 1.7rem;
+    padding-right: 0;
+    display: flex;
+    margin-right: auto;
+    max-height: 7.8rem;
+    position: relative;
+    z-index: 9998;
+}
+
+nav {
+flex-basis: 100%;
+max-width: 1060px;
+padding-left: 2.5rem;
+
+}
+ 
+ul {
+    display: flex;
+    list-style-type: none;
+    flex-basis: 100%;
+}
+
+li {
+    margin: 1rem;
+    font-weight: normal;
+    font-size: 500;
+    color: rgb(84, 82, 82);
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color:inherit;
+    color:black
+
+}
+
+
+
+input {
+    border-radius: 5px;
+    border:1px solid lightgrey;
+    outline: none;
+    margin-right: 1rem;
+    height: 3.7rem;
+    width: 20rem;
+}
+
+input::placeholder {
+    padding-left: 1rem;
+}
+
+button {
+    border-radius: 5px;
+    color: green;
+    border: 1px solid green;
+    background-color:inherit;
+    padding: 1rem;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.login {
+    width: fit-content;
+    margin-left: auto;
+    display:flex;
+    column-gap: 0.6rem;
+    /* margin-right: 3.5rem; */
+}
+
+
+.user{
+    margin-left: auto;
+    margin-right: 0;
+
+}

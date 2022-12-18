@@ -1,0 +1,49 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+input {
+    height: 3.5rem;
+    border-radius: 5px;
+    border: none;
+    text-indent: 1rem; 
+    box-shadow: 0 0 0 1px #dadce0;
+    
+}
+
+label {
+    margin-bottom: 0.5rem;
+
+}
+
+.alert {
+    color: brown;
+    border-radius: 5px;
+    height: 4.5rem;
+    background-color: rgba(245, 0, 0, 0.2);
+    font-size: small;
+    font-weight: bold;
+    text-indent: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.place-order {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+}

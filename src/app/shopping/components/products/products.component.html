@@ -1,0 +1,24 @@
+<article>
+  <section class="filter">
+    <app-product-filter></app-product-filter>
+  </section>
+  <section class="prod-list">
+    <mat-spinner *ngIf="!isLoaded" [diameter]="40"></mat-spinner>
+    <div [hidden]="!isLoaded">
+      <mat-grid-list cols="3" rowHeight="35rem">
+        <mat-grid-tile
+          *ngFor="let product of filteredProducts"
+          [colspan]="1"
+          [rowspan]="1"
+        >
+          <section class="item-card" [class.mat-elevation-z1]="true">
+            <app-product-card
+              [product]="product"
+              [showActions]="true"
+            ></app-product-card>
+          </section>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </section>
+</article>

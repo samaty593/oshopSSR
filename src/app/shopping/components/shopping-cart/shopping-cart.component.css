@@ -1,0 +1,47 @@
+tr.mat-mdc-footer-row td {
+    font-weight: bold;
+  }
+
+p {
+  margin-bottom: 2rem;
+}
+
+.clear-cart {
+  border: none;
+  background-color: lightgray;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.check-out {
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  width:fit-content;
+  cursor: pointer;
+}
+
+table th:nth-child(3) {
+  padding-left: 6rem;
+}
+
+.thumbnail {
+  width: 50px;
+  height:50px;
+  background-size: cover;
+  border-radius: 100%;
+
+}
+
+table :first-child {
+  width: 50px;
+  padding: 0.5rem 1rem;
+}

@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    
+  }
+
+  .filter .mdc-list-item__primary-text {
+    white-space: normal;
+  }
+
+  body { 
+    line-height: 1.5;
+    color: var(--color-body);
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 1.6rem;
+    height: 100vh;
+  }
+  
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.shopping-cart {
+  width: 80vw;
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.shopping-cart td {
+  border:none;
+
+}
+
+tr[mat-row]:nth-child(2n){
+    background-color: rgba(215, 215, 215, 0.1);
+
+}
+
+tr[mat-row]:nth-child(2n):hover {
+  background-color: rgba(215, 215, 215, 0.1);
+
+}

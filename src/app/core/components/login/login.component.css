@@ -1,0 +1,14 @@
+#id {
+    margin: 10rem;
+}
+
+#buttonDiv {
+    margin-bottom: 3rem;
+}
+
+.bot {
+    background-color: burlywood;
+    padding: 1rem;
+    border-radius: 5px;
+    width:fit-content
+}

@@ -1,0 +1,40 @@
+article {
+    display: grid;
+    grid-template-columns:20rem 1fr;
+}
+
+.filter {
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+    position: sticky;
+    top:0;
+    align-self: start;
+}
+
+mat-grid-list {
+    max-width: 90rem;
+
+}
+
+.item-card {
+    width: 25vw;
+    max-width: 25rem;
+    border-radius: 5px;
+    height:fit-content;
+}
+
+
+app-card-loader {
+    width: 25vw;
+    max-width: 25rem;
+    border-radius: 5px;
+    height:fit-content;
+}
+
+
+mat-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5rem;
+} 

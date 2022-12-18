@@ -1,0 +1,106 @@
+article {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.item-description {
+    flex-basis: 50vw;
+}
+
+.item-card {
+flex-basis:30vw;
+box-shadow: 0 0 0 1px #dadce0;
+margin-top: 4rem;
+border-radius:8px;
+
+}
+
+img {
+    width:100%;
+    border-radius:8px;
+
+}
+
+.card-body {
+    padding-left:2rem;   
+    padding-top: 2rem;;
+}
+
+.card-text {
+    margin-top: 1.5rem;
+}
+
+.card-title {
+    font-size: larger;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+label {
+    margin-bottom: 2rem;
+
+}
+
+input, select {
+    height: 3.5rem;
+    border-radius: 5px;
+    border: none;
+    text-indent: 1rem; 
+    box-shadow: 0 0 0 1px #dadce0;
+    
+}
+
+.save {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.add-on  {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #BBBBBB;
+    border-radius: 5px;
+}
+
+.add-on input {
+    flex-grow: 1;
+    border: none
+}
+
+.add-on span {
+    background-color: rgb(193, 187, 187);
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem
+}
+
+.alert {
+    color: brown;
+    border-radius: 5px;
+    height: 4.5rem;
+    background-color: rgba(245, 0, 0, 0.2);
+    font-size: small;
+    font-weight: bold;
+    text-indent: 2rem;
+    display: flex;
+    align-items: center;
+}

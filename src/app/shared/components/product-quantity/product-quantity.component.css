@@ -1,0 +1,19 @@
+article {
+    display: flex;
+    align-items: center;
+
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+div {
+    padding: 0 2rem;
+
+}

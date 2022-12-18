@@ -1,0 +1,28 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+ .price {
+    margin-left: auto;
+}
+
+li {
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    border-bottom: 1px solid lightsteelblue;
+}
+
+
+.total {
+    font-weight: bold;
+    border: none;
+}
+
+p{
+    margin-bottom: 2rem;
+    font-size:medium;
+}

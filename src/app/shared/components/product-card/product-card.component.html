@@ -1,0 +1,21 @@
+<article>
+  <img [src]="product.imageUrl" />
+  <div class="card-body">
+    <p class="card-title">{{ product.title }}</p>
+    <p class="card-text">{{ product.price | currency : "USD" }}</p>
+  </div>
+  <footer *ngIf="showActions">
+    <div class="qty">
+      <label for="qty"> Quantity: </label>
+      <select #qty="ngModel" name="quantity" id="qty" [(ngModel)]="quantity">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <button class="add-card" (click)="addToCart()">Add to Cart</button>
+  </footer>
+</article>

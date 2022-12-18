@@ -1,0 +1,9 @@
+<article *ngIf="cart$ | async as cart">
+  <section class="form">
+    <h1>Shipping</h1>
+    <app-shipping-form [cart]="cart"></app-shipping-form>
+  </section>
+  <section class="order">
+    <app-shopping-cart-summary [cart]="cart"></app-shopping-cart-summary>
+  </section>
+</article>
